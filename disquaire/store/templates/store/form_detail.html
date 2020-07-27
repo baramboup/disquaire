@@ -1,0 +1,7 @@
+{% load crispy_forms_tags %}
+<form class="form-inline" action="{% url 'store:detail' album_id=id %}" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+
+    <button type="submit" class="btn btn-success">Réserver</button>
+  </form>
