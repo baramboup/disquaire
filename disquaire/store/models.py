@@ -16,6 +16,9 @@ class Artist(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "artist"
+
 class Contact(models.Model):
     email = models.EmailField(max_length=100, verbose_name="Email", unique=True)
     name = models.CharField(max_length=200, verbose_name="Nom")

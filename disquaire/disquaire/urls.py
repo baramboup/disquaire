@@ -24,7 +24,7 @@ from store import views
 
 urlpatterns = [
     url(r'^store/', include(('store.urls', 'store'), namespace='store')),
-    url(r'^admin/', admin.site.urls),
+    url(r'^content/', admin.site.urls),
     url(r'^$', views.index, name='home')
 ]
 
